@@ -2,7 +2,7 @@
   <div id="waline"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#waline', function() {
-      Fluid.utils.createScript('<%= url_join(theme.static_prefix.waline, 'Waline.min.js') %>', function() {
+      Fluid.utils.createScript('<%= url_join(theme.static_prefix.waline, 'waline.mjs') %>', function() {
         var options = Object.assign(
           <%- JSON.stringify(theme.waline || {}) %>,
           {
